@@ -56,7 +56,11 @@ Votre équipe veut mettre en place un processus de construction automatisé pour
    - Crée un Bundle Zip
 
 7. Compléter le fichier `ci.yml` en ajoutant les fonctionalités suivantes :
-   - Upload le Bundle Zip créé dans l'étape précédante https://github.com/actions/upload-artifact 
+   - Upload le Bundle Zip créé dans l'étape précédante https://github.com/actions/upload-artifact
+   - Publier la release du code : https://github.com/marketplace/actions/upload-release-asset
 
-Les étapes précédantes devraient automatiquement générer des 
+Les étapes précédantes devraient automatiquement générer des artefact dans Github
+
+8. Compléter le fichier `ci.yml` en ajoutant les fonctionalités suivantes :
+   - 
 
