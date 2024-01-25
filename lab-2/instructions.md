@@ -62,5 +62,13 @@ Votre équipe veut mettre en place un processus de construction automatisé pour
 Les étapes précédantes devraient automatiquement générer des artefact dans Github
 
 8. Compléter le fichier `ci.yml` en ajoutant les fonctionalités suivantes :
-   - 
+   - Faite un lint du code Python avec `flake8` qui consiste à installer `flake8` et à exécuter les commande suivantes :
+    ```
+    flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+    flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    ```
 
+9. Scindez le pipeline en 3 phases : Lint, build, publish
+   - La phase Lint contient les étapes : checkout, Set up de Python, et Lint du code
+   - La phase build contient les étapes: checkout, installation de librairies python, upload d'artéfacts
+   - La phase publish contient les étapes : création de la release, et upload d'artéfacts
