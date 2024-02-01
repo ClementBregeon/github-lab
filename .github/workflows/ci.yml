@@ -39,9 +39,9 @@ jobs:
 
     - name: Installation de librairies Python
       run: |
-          cd github-lab/lab-2/code-appli-python/vote
-          pip install --upgrade pip
-          pip install -r requirements.txt
+         cd vote  # Se déplacer dans le répertoire du projet
+        pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Créer un Bundle Zip
       run: |
