@@ -63,8 +63,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v1.0.0  # Utilisez la version appropriée
-        release_name: Release v1.0.0  # Utilisez le nom de version approprié
+        tag_name: v1.0.0
+        release_name: Release v1.0.0
         body: 'Description de la release'
 
     - name: Upload d'artéfacts
