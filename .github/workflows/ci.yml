@@ -39,7 +39,7 @@ jobs:
     - name: Installation de librairies Python
       run: |
         pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r ./requirements.txt
 
     - name: Créer un Bundle Zip
       run: |
