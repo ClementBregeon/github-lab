@@ -38,7 +38,7 @@ jobs:
 
     - name: Installation de librairies Python
       run: |
-        pip install -r requirements.txt  # Assurez-vous d'avoir un fichier requirements.txt avec les dépendances nécessaires
+        pip install -r code-appli-python/vote/requirements.txt
 
     - name: Créer un Bundle Zip
       run: |
