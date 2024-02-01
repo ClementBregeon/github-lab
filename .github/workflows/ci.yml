@@ -38,7 +38,7 @@ jobs:
 
     - name: Installation de librairies Python
       run: |
-        pip install -r github-lab/lab-2/code-appli-python/vote/requirements.txt
+        pip install -r vote/requirements.txt
 
     - name: Créer un Bundle Zip
       run: |
